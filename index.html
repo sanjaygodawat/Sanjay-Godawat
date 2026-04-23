@@ -2109,15 +2109,23 @@
     <div class="contact-detail"><div class="contact-icon">⏰</div><div><div class="contact-label">Working Hours</div><div class="contact-value">Mon – Sat: 9 AM – 8 PM IST</div></div></div>
   </div>
 
-  <div class="contact-form">
+  <!-- changed div.contact-form -> form.contact-form -->
+  <form class="contact-form"
+    action="https://docs.google.com/forms/d/e/1FAIpQLScvjPSPx00HFspKSWZFnzuGSzxs6z8sfyQwnDe2rYpqeUZ4_Q/formResponse"
+    method="POST"
+    target="hidden_iframe"
+    onsubmit="showSuccess(); setTimeout(() => this.reset(), 200);">
+
     <div class="form-row">
-      <div class="form-group"><label>Your Name</label><input type="text" placeholder="Rahul Sharma" /></div>
-      <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" placeholder="+91 98765 43210" /></div>
+      <div class="form-group"><label>Your Name</label><input type="text" name="entry.1955920508" placeholder="Rahul Sharma" required /></div>
+      <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" name="entry.1475267173" placeholder="+91 98765 43210" required /></div>
     </div>
-    <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" /></div>
+
+    <div class="form-group"><label>Email Address</label><input type="email" name="entry.727272905" placeholder="your@email.com" required /></div>
+
     <div class="form-group">
       <label>Service Required</label>
-      <select>
+      <select name="entry.1051705655" required>
         <option value="">Select a Service...</option>
         <option>Business Consulting Videos</option>
         <option>Social Media Content</option>
@@ -2129,9 +2137,10 @@
         <option>Other</option>
       </select>
     </div>
+
     <div class="form-group">
       <label>Budget Range</label>
-      <select>
+      <select name="entry.454278886" required>
         <option value="">Select Budget...</option>
         <option>Under ₹5,000</option>
         <option>₹5,000 – ₹15,000</option>
@@ -2140,13 +2149,20 @@
         <option>Monthly Retainer</option>
       </select>
     </div>
+
     <div class="form-group">
       <label>Project Details</label>
-      <textarea placeholder="Tell us about your project — what do you need, timeline, reference links, etc."></textarea>
+      <textarea name="entry.117075029" placeholder="Tell us about your project — what do you need, timeline, reference links, etc." required></textarea>
     </div>
-    <button class="form-submit" onclick="showSuccess()">Send Message — Get Free Quote</button>
-  </div>
+
+    <!-- changed button onclick -> type submit -->
+    <button type="submit" class="form-submit">Send Message — Get Free Quote</button>
+  </form>
 </section>
+
+<!-- hidden iframe for silent Google Form submit -->
+<iframe name="
+
 
 <!-- SUCCESS POPUP -->
 <div class="success-overlay" id="successOverlay" onclick="closeSuccess()">
@@ -2198,8 +2214,7 @@
     const overlay = document.getElementById('successOverlay');
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
-    document.querySelectorAll('.contact-form input, .contact-form textarea, .contact-form select')
-      .forEach(el => el.value = '');
+
   }
 
   function closeSuccess() {
@@ -2229,6 +2244,8 @@
     el.style.transition = 'all 0.6s ease';
     observer.observe(el);
   });
+  
 </script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 </body>
 </html>
