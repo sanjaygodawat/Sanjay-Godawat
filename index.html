@@ -1461,52 +1461,143 @@
      RESPONSIVE BREAKPOINTS
   ========================================= */
 
-  @media (max-width: 1200px) {
-    .hero {
-      min-height: auto;
-      padding-top: 130px;
-      padding-bottom: 120px;
-    }
-
-    .hero-content {
-      max-width: 720px;
-    }
-
-    .hero-founder {
-      width: 280px;
-      right: var(--container-pad);
-      top: 120px;
-    }
-
-    .hero-stats {
-      right: var(--container-pad);
-      bottom: 30px;
-    }
-
-    .services-grid,
-    .pricing-grid,
-    .testi-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-
-    .process-steps {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px 0;
-    }
-
-    .process-steps::before { display: none; }
-
-    .clients-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .about,
-    .contact,
-    .why-grid {
-      gap: 50px;
-    }
+  @media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 110px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
   }
+
+  .hero-content {
+    max-width: 100%;
+    order: 1;
+  }
+
+  .hero-founder {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    display: flex;            /* important: was none before */
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    order: 2;
+    margin-top: 8px;
+    overflow: visible;
+    animation: none;
+  }
+
+  .founder-img-wrap {
+    width: 100%;
+    height: 280px;
+    flex: none;
+    border: 1px solid rgba(201,168,76,0.2);
+    border-bottom: none;
+  }
+
+  .founder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .founder-card {
+    width: 100%;
+    padding: 16px;
+    border-top: 1px solid var(--gold);
+  }
+
+  .founder-name { font-size: 22px; }
+  .fnum { font-size: 22px; }
+  .founder-tagline { font-size: 11px; }
+
+  .hero-stats {
+    position: static;
+    right: auto;
+    bottom: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
+    gap: 12px;
+  }
+
+  .stat-item { text-align: left; }
+  .hero-scroll { display: none; }
+}
+
+/* ===== FINAL MOBILE/TABLET FOUNDER FIX ===== */
+@media (max-width: 1024px) {
+  .hero {
+    min-height: auto !important;
+    padding: 110px 20px 40px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  .hero-content {
+    order: 1;
+    max-width: 100% !important;
+  }
+
+  .hero-founder {
+    order: 2;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin-top: 10px !important;
+    z-index: 2 !important;
+    overflow: visible !important;
+    animation: none !important;
+  }
+
+  .founder-img-wrap {
+    width: 100% !important;
+    height: 260px !important;   /* tablet/phone visible height */
+    overflow: hidden !important;
+    border: 1px solid rgba(201,168,76,0.2);
+    border-bottom: none;
+    flex: none !important;
+  }
+
+  .founder-img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+  }
+
+  .founder-card {
+    width: 100% !important;
+    padding: 16px !important;
+  }
+
+  .hero-stats {
+    position: static !important;
+    right: auto !important;
+    bottom: auto !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    margin-top: 10px !important;
+  }
+
+  .stat-item { text-align: left !important; }
+  .hero-scroll { display: none !important; }
+}
 
   @media (max-width: 992px) {
     nav {
