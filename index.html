@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>SG Tech Lab | Premium Video Editing Studio</title>
+<title>SG Lumiqo | Premium Video Editing Studio</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -1712,136 +1712,7 @@
       font-size: 24px;
     }
   }
-/* remove the last chaneg for image responsive */
-  /* ================================
-   RESPONSIVE FIX (TABLET + MOBILE)
-   Put at END of CSS
-================================ */
 
-/* ---------- Tablet ---------- */
-@media (max-width: 1024px) {
-  nav { padding: 16px 24px; }
-  .nav-links { gap: 18px; }
-  .hero { padding: 100px 24px 50px; min-height: auto; }
-  section { padding: 70px 24px; }
-
-  .about, .contact, .why-grid { gap: 32px; }
-  .services-grid, .pricing-grid, .testi-grid { grid-template-columns: repeat(2, 1fr); }
-  .process-steps { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-  .process-steps::before { display: none; }
-
-  .clients-grid { grid-template-columns: repeat(3, 1fr); }
-
-  /* Founder visible + in flow */
-  .hero-founder {
-    position: relative;
-    top: auto; right: auto; bottom: auto; left: auto;
-    width: min(420px, 100%);
-    margin: 16px 0 0 auto;
-    height: auto;
-    display: block;
-    overflow: visible;
-    animation: none;
-  }
-  .founder-img-wrap { height: 300px; }
-  .founder-card { width: 100%; }
-  .hero-stats {
-    position: static;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 24px;
-    margin-top: 16px;
-  }
-  .stat-item { text-align: left; }
-}
-
-/* ---------- Mobile ---------- */
-@media (max-width: 768px) {
-  html, body { overflow-x: hidden; }
-
-  nav { padding: 14px 16px; }
-  .nav-logo { font-size: 22px; letter-spacing: 2px; }
-  .nav-links { display: none; }
-
-  section { padding: 56px 16px; }
-
-  .hero {
-    padding: 92px 16px 34px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    min-height: auto;
-  }
-
-  .hero-content { max-width: 100%; }
-  .hero-title { font-size: clamp(42px, 14vw, 64px); line-height: 0.95; }
-  .hero-subtitle { font-size: 16px; max-width: 100%; margin-bottom: 24px; }
-
-  .hero-btns {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .btn-primary, .btn-secondary {
-    width: 100%;
-    text-align: center;
-    padding: 14px 18px;
-  }
-
-  /* Founder mobile layout */
-  .hero-founder {
-    position: relative !important;
-    top: auto !important; right: auto !important; bottom: auto !important; left: auto !important;
-    width: 100% !important;
-    margin: 8px 0 0 !important;
-    display: block !important;   /* ensure not hidden */
-    height: auto !important;
-    overflow: visible !important;
-    order: 2;
-  }
-  .founder-img-wrap {
-    width: 100%;
-    height: 250px;
-    flex: none;
-    border: 1px solid rgba(201,168,76,0.2);
-    border-bottom: none;
-  }
-  .founder-img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
-  .founder-card { padding: 14px; }
-  .founder-name { font-size: 22px; }
-  .founder-tagline { font-size: 11px; margin-bottom: 14px; }
-  .fnum { font-size: 21px; }
-
-  .hero-stats {
-    position: static !important;
-    right: auto; bottom: auto;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    gap: 8px;
-    margin-top: 8px;
-  }
-  .stat-item { text-align: left; }
-  .stat-num { font-size: 30px; }
-  .hero-scroll { display: none; }
-
-  .about, .contact, .why-grid,
-  .services-grid, .pricing-grid, .testi-grid,
-  .process-steps, .clients-grid, .form-row {
-    grid-template-columns: 1fr !important;
-  }
-
-  .services-header { display: block; }
-  .services-header .section-sub { margin-top: 10px; }
-
-  .clients-numbers {
-    padding: 24px 12px;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .cnum-item { min-width: 120px; flex: 1 1 45%; }
-  .cnum-divider { display: none; }
-}
-/* remove the last chaneg for image responsive */
   @media (max-width: 480px) {
     .nav-logo { font-size: 21px; }
 
@@ -1903,12 +1774,12 @@
   <!-- Founder (hidden on <=992px by CSS) -->
   <div class="hero-founder">
     <div class="founder-img-wrap">
-<img src="founder.jpg" alt="Founder SG Tech Lab" class="founder-img" />     
+<img src="founder.jpg" alt="Founder SG Lumiqo" class="founder-img" />     
 <div class="founder-glow"></div>
     </div>
     <div class="founder-card">
       <div class="founder-badge">FOUNDER & DIRECTOR</div>
-      <div class="founder-name">SG Tech Lab</div>
+      <div class="founder-name">SG Lumiqo</div>
       <div class="founder-tagline">"We don't just edit videos —<br>we build brands through visuals."</div>
       <div class="founder-stats">
         <div class="fstat"><span class="fnum">500+</span><span class="flabel">Videos</span></div>
@@ -1943,7 +1814,7 @@
   <div class="about-text">
     <div class="section-label">Who We Are</div>
     <h2 class="section-title">NOT JUST <span>EDITORS</span> — WE ARE STORYTELLERS</h2>
-    <p>SG Tech Lab is a premium video production studio built by a passionate team of 6 dedicated specialists. We don't just cut footage — we craft visual narratives that drive results for your business.</p>
+    <p>SG Lumiqo is a premium video production studio built by a passionate team of 6 dedicated specialists. We don't just cut footage — we craft visual narratives that drive results for your business.</p>
     <p>From fast-paced social media reels to corporate brand films, we bring a professional agency-level approach to every project — no matter the size.</p>
     <div class="about-highlights">
       <div class="highlight-item">Specialized team for every industry vertical</div>
@@ -1991,7 +1862,7 @@
 <!-- WHY US -->
 <section class="why-us" id="why">
   <div class="section-label">Why Choose Us</div>
-  <h2 class="section-title">THE SG TECH LAB <span>ADVANTAGE</span></h2>
+  <h2 class="section-title">THE SG Lumiqo <span>ADVANTAGE</span></h2>
   <div class="why-grid">
     <div class="why-features">
       <div class="why-item"><div class="why-icon">⚡</div><div class="why-text"><h4>FAST TURNAROUND</h4><p>We deliver most projects within 24–72 hours. Rush delivery available for urgent campaigns.</p></div></div>
@@ -2046,17 +1917,17 @@
   <div class="testi-grid">
     <div class="testi-card">
       <div class="testi-stars">★★★★★</div><div class="testi-quote">"</div>
-      <p class="testi-text">SG Tech Lab completely transformed our real estate listings. The property walkthrough videos they produced were cinematic and our sales improved by 40% within the first month.</p>
+      <p class="testi-text">SG Lumiqo completely transformed our real estate listings. The property walkthrough videos they produced were cinematic and our sales improved by 40% within the first month.</p>
       <div class="testi-author"><div class="testi-avatar">R</div><div><div class="testi-name">Rahul Sharma</div><div class="testi-role">Real Estate Developer</div></div></div>
     </div>
     <div class="testi-card">
       <div class="testi-stars">★★★★★</div><div class="testi-quote">"</div>
-      <p class="testi-text">As a Vastu consultant, I needed someone who understood the tone of my content. The SG Tech Lab team nailed it — serene, professional, and deeply engaging videos.</p>
+      <p class="testi-text">As a Vastu consultant, I needed someone who understood the tone of my content. The SG Lumiqo team nailed it — serene, professional, and deeply engaging videos.</p>
       <div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Anita Verma</div><div class="testi-role">Vastu Consultant</div></div></div>
     </div>
     <div class="testi-card">
       <div class="testi-stars">★★★★★</div><div class="testi-quote">"</div>
-      <p class="testi-text">Our YouTube channel grew from 2K to 50K subscribers after we started working with SG Tech Lab. Their social media editing is on another level — sharp, fast, and always on trend.</p>
+      <p class="testi-text">Our YouTube channel grew from 2K to 50K subscribers after we started working with SG Lumiqo. Their social media editing is on another level — sharp, fast, and always on trend.</p>
       <div class="testi-author"><div class="testi-avatar">V</div><div><div class="testi-name">Vikram Patel</div><div class="testi-role">Business Coach & YouTuber</div></div></div>
     </div>
   </div>
@@ -2067,7 +1938,7 @@
   <div class="clients-header">
     <div class="section-label">Trusted By</div>
     <h2 class="section-title">OUR <span>CLIENTS</span></h2>
-    <p class="section-sub">Brands and creators who trust SG Tech Lab for their video content.</p>
+    <p class="section-sub">Brands and creators who trust SG Lumiqo for their video content.</p>
   </div>
 
   <div class="clients-grid">
@@ -2170,7 +2041,7 @@
     <div class="success-icon">🎬</div>
     <div class="success-tick">✓</div>
     <h3 class="success-title">MESSAGE SENT!</h3>
-    <p class="success-msg">Thank you for reaching out to <strong>SG Tech Lab</strong>.<br>We will contact you within <span>2 hours</span> with a custom quote.</p>
+    <p class="success-msg">Thank you for reaching out to <strong>SG Lumiqo</strong>.<br>We will contact you within <span>2 hours</span> with a custom quote.</p>
     <div class="success-info"><span>📱 WhatsApp: +91 86908 94454</span></div>
     <button class="success-btn" onclick="closeSuccess()">Got It — Thanks!</button>
   </div>
@@ -2180,7 +2051,7 @@
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-logo">SG<span>.</span>TECH LAB</div>
+      <div class="footer-logo">SG<span>.</span>Lumiqo</div>
       <div class="footer-tagline">Premium Video Editing Studio</div>
     </div>
     <ul class="footer-links">
@@ -2190,7 +2061,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
-  <div class="footer-copy">© 2024 SG Tech Lab. All rights reserved. | Crafted with precision 🎬</div>
+  <div class="footer-copy">© 2024 SG Lumiqo. All rights reserved. | Crafted with precision 🎬</div>
 </footer>
 
 <!-- FLOATING WHATSAPP -->
